@@ -1,6 +1,6 @@
 # avalonreset-pro
 
-Small lab. Real systems.
+Legends never die.
 
 Benjamin builds AI publishing, search, automation, and operator tools. This is
 where the private builds, release work, and supporting infrastructure live.
