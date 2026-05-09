@@ -1,0 +1,22 @@
+name: Profile Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify profile README exists
+        run: test -s profile/README.md
+
+      - name: Check required links
+        run: |
+          grep -q "youtube.com" profile/README.md
+          grep -q "github.com/avalonreset" profile/README.md
+          grep -q "skool.com/ai-marketing-hub-pro" profile/README.md
